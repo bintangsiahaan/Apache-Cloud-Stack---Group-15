@@ -11,6 +11,7 @@
 
 ## Definisi
 ![CloudStack Logo](https://upload.wikimedia.org/wikipedia/commons/7/70/Apache_CloudStack_Logo.svg)
+
 Apache CloudStack adalah sebuah platform open-source berbasis Java yang dirancang untuk membangun dan mengelola layanan cloud computing Infrastructure as a Service (IaaS). Dengan CloudStack, pengguna dapat melakukan provisioning, pengelolaan, dan pengaturan infrastruktur komputasi seperti mesin virtual, jaringan, dan penyimpanan dari satu antarmuka terpusat, baik melalui GUI berbasis web maupun API.
 
 CloudStack memungkinkan penyedia layanan atau organisasi untuk membangun infrastruktur cloud layaknya Amazon Web Services (AWS) atau Google Cloud, namun dikelola secara mandiri di lingkungan lokal (on-premise) atau hybrid cloud.
