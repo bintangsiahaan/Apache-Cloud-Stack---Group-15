@@ -88,8 +88,6 @@ ip a
 ping -c 4 8.8.8.8  
 ```
 
-```
-
 ### Installing Monitoring Tools
 
 ```
@@ -236,15 +234,15 @@ service nfs-kernel-server restart
 ```
 Penjelasan:
 
-* sed -i -e 's/^RPCMOUNTDOPTS="--manage-gids"$/RPCMOUNTDOPTS="-p 892 --manage-gids"/g' /etc/default/nfs-kernel-server
+* `sed -i -e 's/^RPCMOUNTDOPTS="--manage-gids"$/RPCMOUNTDOPTS="-p 892 --manage-gids"/g' /etc/default/nfs-kernel-server`
 Mengubah konfigurasi RPCMOUNTDOPTS di file /etc/default/nfs-kernel-server agar NFS menggunakan port 892.
-* sed -i -e 's/^STATDOPTS=$/STATDOPTS="--port 662 --outgoing-port 2020"/g' /etc/default/nfs-common
+* `sed -i -e 's/^STATDOPTS=$/STATDOPTS="--port 662 --outgoing-port 2020"/g' /etc/default/nfs-common`
 Mengubah konfigurasi STATDOPTS di file /etc/default/nfs-common untuk mengatur port statd menjadi 662 dan 2020.
-* echo "NEED_STATD=yes" >> /etc/default/nfs-common
+* `echo "NEED_STATD=yes" >> /etc/default/nfs-common`
 Menambahkan baris NEED_STATD=yes ke file /etc/default/nfs-common untuk mengaktifkan statd yang diperlukan oleh NFS.
-* sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
+* `sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota`
 Mengubah konfigurasi RPCRQUOTADOPTS di file /etc/default/quota untuk menggunakan port 875 oleh rpcquotad (pengelola kuota disk).
-* service nfs-kernel-server restart
+* `service nfs-kernel-server restart`
 Merestart layanan NFS Kernel Server agar perubahan konfigurasi yang baru diterapkan.
 
 ## Configure CloudStack KVM Host
@@ -268,9 +266,9 @@ sed -i.bak 's/^\(LIBVIRTD_ARGS=\).*/\1"--listen"/' /etc/default/libvirtd
 ```
 
 Penjelasan
-* sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
+* `sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf`
 Mengubah baris yang diawali #vnc_listen di file /etc/libvirt/qemu.conf menjadi vnc_listen = "0.0.0.0", yang memungkinkan VNC mendengarkan pada semua alamat IP lokal. Opsi -i menyimpan perubahan langsung pada file.
-* sed -i.bak 's/^\(LIBVIRTD_ARGS=\).*/\1"--listen"/' /etc/default/libvirtd
+* `sed -i.bak 's/^\(LIBVIRTD_ARGS=\).*/\1"--listen"/' /etc/default/libvirtd`
 Mengubah baris LIBVIRTD_ARGS= di file /etc/default/libvirtd menjadi LIBVIRTD_ARGS="--listen", yang mengaktifkan opsi --listen untuk libvirtd. Opsi -i.bak membuat salinan cadangan file sebelum mengubahnya.
 
 #### Menambahkan beberapa baris
@@ -283,15 +281,15 @@ echo 'mdns_adv = 0' >> /etc/libvirt/libvirtd.conf
 echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
 ```
 Penjelasan:
-* echo 'listen_tls=0' >> /etc/libvirt/libvirtd.conf
+* `echo 'listen_tls=0' >> /etc/libvirt/libvirtd.conf`
 Menonaktifkan TLS untuk mendengarkan pada daemon libvirt, artinya koneksi TLS tidak akan diterima.
-* echo 'listen_tcp=1' >> /etc/libvirt/libvirtd.conf
+* `echo 'listen_tcp=1' >> /etc/libvirt/libvirtd.conf`
 Mengaktifkan TCP untuk mendengarkan pada daemon libvirt, memungkinkan koneksi TCP diterima.
-* echo 'tcp_port = "16509"' >> /etc/libvirt/libvirtd.conf
+* `echo 'tcp_port = "16509"' >> /etc/libvirt/libvirtd.conf`
 Menentukan port 16509 sebagai tempat daemon mendengarkan koneksi TCP.
-* echo 'mdns_adv = 0' >> /etc/libvirt/libvirtd.conf
+* `echo 'mdns_adv = 0' >> /etc/libvirt/libvirtd.conf`
 Menonaktifkan multicast DNS, sehingga layanan libvirt tidak dapat ditemukan melalui nDNS.
-* echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
+* `echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf`
 Menonaktifkan autentikasi untuk koneksi TCP ke daemon libvirt, memungkinkan koneksi tanpa autentikasi.
 
 #### Restart libvirtd
@@ -302,9 +300,9 @@ systemctl restart libvirtd
 ```
 
 Penjelasan:
-* systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
+* `systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket`
 Perintah ini menonaktifkan soket-soket yang digunakan oleh libvirtd untuk komunikasi, sehingga mencegah libvirtd menerima koneksi melalui soket tersebut.
-* systemctl restart libvirtd
+* `systemctl restart libvirtd`
 Perintah ini me-restart layanan libvirtd setelah perubahan konfigurasi atau soket, agar perubahan yang dilakukan dapat diterapkan.
 libvirtd
 libvirtd adalah daemon yang mengelola mesin virtual, jaringan, dan penyimpanan untuk teknologi virtualisasi seperti KVM dan QEMU. Layanan ini memberikan API konsisten untuk mengelola sumber daya virtualisasi secara aman.
@@ -352,11 +350,11 @@ iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 16514 -j ACCEP
 apt-get install iptables-persistent
 ```
 Saat instalasi iptables-persistent, cukup jawab yes untuk menyimpan rules secara permanen. Langkah ini memastikan semua port layanan yang digunakan oleh cloudstack tidak diblokir oleh firewall dan dapat diakses oleh jaringan
-* '-A INPUT' menambahkan aturan ke rantai INPUT (incoming traffic).
-* '-s $NETWORK' menentukan sumber paket, misalnya jaringan x/24.
-* '-m state --state NEW' menggunakan modul *state* untuk mencocokkan paket yang memulai koneksi baru.
-* '-p udp/tcp --dport [PORT]' menerapkan aturan untuk protokol dan port tujuan tertentu.
-* '-j ACCEPT' menerima paket yang cocok dengan aturan tersebut.
+* `-A INPUT` menambahkan aturan ke rantai INPUT (incoming traffic).
+* `-s $NETWORK` menentukan sumber paket, misalnya jaringan x/24.
+* `-m state --state NEW` menggunakan modul *state* untuk mencocokkan paket yang memulai koneksi baru.
+* `-p udp/tcp --dport [PORT]` menerapkan aturan untuk protokol dan port tujuan tertentu.
+* `-j ACCEPT` menerima paket yang cocok dengan aturan tersebut.
 
 
 ### Disable apparmour on libvirtd
