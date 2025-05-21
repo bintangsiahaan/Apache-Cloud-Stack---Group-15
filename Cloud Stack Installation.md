@@ -14,10 +14,10 @@ Spesifikasi ini memungkinkan server menjalankan peran sebagai controller dan com
 ### Network Address
 
 ```
-Network Address : /24
-Host IP address : /24
-Gateway : 
-Public IP :
+Network Address : 10.1.10.0/24
+Host IP address : 10.1.10.24/24
+Gateway : 10.1.10.1
+Public IP : 10.1.10.203
 ```
 Konfigurasi ini menyusun alamat jaringan lokal (private LAN) dan gateway default yang akan digunakan untuk konektivitas internet dan komunikasi internal.
 
@@ -27,7 +27,7 @@ Modifikasi file konfigurasi network menggunakan netplan yang digunakan oleh Ubun
 
 ```
 cd /etc/netplan
-sudo nano ./0*.yaml
+sudo nano ./50-cloud-init.yaml
 ```
 
 File konfigurasi awalnya seperti ini:
@@ -55,13 +55,13 @@ network:
       optional: true
   bridges:
     cloudbr0:
-      addresses: [x/24] 
+      addresses: [10.1.10.24/24] 
       routes:
         - to: default
-          via: x
+          via: 10.1.10.1
       nameservers:
         addresses: [1.1.1.1,8.8.8.8]
-      interfaces: [enp0s3]
+      interfaces: [enp1s0]
       dhcp4: false
       dhcp6: false
       parameters:
@@ -211,7 +211,7 @@ Seharusnya terdapat kata 'active' pada output
 ### Setup Database sebagai Root dan Kemudian Buat username "cloud" dengan password "cloud" juga
 
 ```
-cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:Pa$$w0rd -i 192.168.104.24
+cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:Pa$$w0rd -i 10.1.10.24
 ```
 
 ### Configure Primary and Secondary Storage
@@ -330,7 +330,7 @@ systemctl restart libvirtd
 ### Configure Firewall Rules
 
 ```
-NETWORK=x/24
+NETWORK=10.1.10.1/24
 iptables -A INPUT -s $NETWORK -m state --state NEW -p udp --dport 111 -j ACCEPT
 iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 111 -j ACCEPT
 iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 2049 -j ACCEPT
@@ -397,15 +397,11 @@ Melihat log terbaru dari server manajemen secara real-time. Sangat membantu untu
 ### Open Web Browser
 
 ```
-http://<YOUR_IP_ADDRESS>:8080
+http://100.118.141.51:8080
 ```
 
-Contoh:
 
-```
-http://x:8080
-```
+### Halaman Utama Apache Cloud Stack
 
-### Dashboard Cloud Stack
+![apache_cloudstack](https://github.com/user-attachments/assets/a5e0c1e7-81ab-45f3-84d1-cbba8e3d49ba)
 
-(image dashboard)
