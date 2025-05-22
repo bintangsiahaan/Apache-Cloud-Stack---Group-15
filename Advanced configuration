@@ -92,3 +92,63 @@ Setelah semua konfigurasi selesai, klik **Launch Zone**.
 
 ---
 
+# Membuat Instance di Apache CloudStack
+
+Dokumentasi ini menjelaskan proses membuat virtual machine (Instance) di Apache CloudStack mulai dari compute offering hingga VM berjalan.
+
+---
+
+## 1. Tambah Compute Offering
+
+Buat compute offering sebagai konfigurasi resource (CPU, RAM) untuk VM.
+
+[Add compute offering](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/1.%20Add%20compute%20offering.png)
+
+---
+
+## 2. Daftarkan ISO
+
+Daftarkan file ISO (misal Ubuntu, Debian, dsb.) untuk digunakan dalam instalasi instance.
+
+[Register the ISO](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/2.%20Register%20the%20ISO.png)
+
+---
+
+## 3. Masukkan Detail Instance (1)
+
+Mulai proses pembuatan instance dengan memilih zona, template, dan offering.
+
+[Add instance details (1)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/3.%20Add%20instance%20details%20(1).png)
+
+---
+
+## 4. Masukkan Detail Instance (2)
+
+
+[Add instance details (2)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/4.%20Add%20instance%20details%20(2).png)
+
+---
+
+## 5. Masukkan Detail Instance (3)
+
+
+[Add instance details (3)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/5.%20Add%20instance%20details%20(3).png)
+
+---
+
+## 6. Masukkan Detail Instance (4)
+
+[Add instance details (4)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/6.%20Add%20instance%20details%20(4).png)
+
+---
+
+## 7. Instance Berjalan
+
+Instance berhasil dibuat dan statusnya sekarang **Running**.
+
+[Instance running](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/7.%20Instance%20running.png)
+
+---
+
+
+
