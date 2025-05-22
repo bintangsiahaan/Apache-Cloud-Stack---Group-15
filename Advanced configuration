@@ -151,4 +151,159 @@ Instance berhasil dibuat dan statusnya sekarang **Running**.
 ---
 
 
+# Requirement Task - Apache CloudStack
+
+Dokumentasi langkah-langkah pengaturan firewall, port forwarding, akses SSH, dan HTTP untuk VM CloudStack.
+
+---
+
+## 1. Ubuntu Error (Before Detach)
+
+Masalah saat VM tidak bisa booting karena perangkat ISO belum dilepas.
+
+[Ubuntu Error (Before Detach)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/1.%20Ubuntu%20Error%20(Before%20Detach).png)
+
+---
+
+## 2. Detach ISO
+
+Lepaskan ISO agar VM dapat boot dari disk.
+
+[Detach ISO](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/2.%20Detach%20ISO.png)
+
+---
+
+## 3. Ubuntu Fixed (After Detach)
+
+VM berhasil booting setelah ISO dilepas.
+
+[Ubuntu Fixed (After Detach)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/3.%20Ubuntu%20Fixed%20(After%20Detach).png)
+
+---
+
+## 4. Egress Rule
+
+Atur egress rule agar VM bisa keluar ke internet.
+
+[Egress Rule](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/4.%20Egress%20Rule.png)
+
+---
+
+## 5. Firewall 22
+
+Aktifkan firewall port 22 untuk SSH.
+
+[Firewall 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/5.%20Firewall%2022.png)
+
+---
+
+## 6. VM bisa akses internet
+
+Verifikasi VM sudah bisa akses internet.
+
+[VM bisa akses internet](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/6.%20VM%20bisa%20akses%20internet.png)
+
+---
+
+## 7. Port Forwarding 22
+
+Lakukan port forwarding dari host ke VM untuk port 22 (SSH).
+
+[Port Forwarding 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/7.%20Port%20Forwarding%2022.png)
+
+---
+
+## 8. Mengatur VM agar membuka Port 22
+
+Buka port 22 pada firewall di dalam VM.
+
+[Mengatur VM agar membuka Port 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/8.%20Mengatur%20VM%20agar%20membuka%20Port%2022.png)
+
+---
+
+## 9. Bisa SSH dari luar
+
+Verifikasi bahwa VM dapat diakses via SSH dari luar.
+
+[Bisa SSH dari luar](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/9.%20Bisa%20SSH%20dari%20luar.png)
+
+---
+
+## 10. Firewall 2222
+
+Tambahkan aturan firewall untuk port 2222 (akses alternatif SSH).
+
+[Firewall 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/10.%20Firewall%202222.png)
+
+---
+
+## 11. Port Forwarding 2222
+
+Lakukan port forwarding dari port 2222 host ke port 22 VM.
+
+[Port Forwarding 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/11.%20Port%20Forwarding%202222.png)
+
+---
+
+## 12. Mengatur Port Forwarding 2222 di Ubuntu Host
+
+Konfigurasi port forwarding 2222 pada Ubuntu host menggunakan `iptables` atau `netplan`.
+
+[Mengatur Port Forwarding 2222 di Ubuntu Host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/12.%20Mengatur%20Port%20Forwarding%202222%20di%20Ubuntu%20Host.png)
+
+---
+
+## 13. Mengatur VM agar membuka Port 2222
+
+Pastikan firewall di VM membuka port 2222.
+
+[Mengatur VM agar membuka Port 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/13.%20Mengatur%20VM%20agar%20membuka%20Port%202222.png)
+
+---
+
+## 14. Bisa Port Forwarding 2222
+
+Verifikasi bahwa port forwarding ke 2222 berhasil.
+
+[Bisa Port Forwarding 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/14.%20Bisa%20Port%20Forwarding%202222.png)
+
+---
+
+## 15. Mengatur Port Forwarding 80 di Ubuntu Host
+
+Konfigurasi forwarding port 80 untuk akses web (HTTP).
+
+[Mengatur Port Forwarding 80 di Ubuntu Host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/15.%20Mengatur%20Port%20Forwarding%2080%20di%20Ubuntu%20Host.png)
+
+---
+
+## 16. Firewall 80
+
+Aktifkan firewall port 80 untuk HTTP.
+
+[Firewall 80](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/16.%20Firewall%2080.png)
+
+---
+
+## 17. Port Forwarding 80
+
+Lakukan port forwarding dari port 80 host ke port 80 VM.
+
+[Port Forwarding 80](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
+
+---
+
+## 18. Install Apache2 sebagai Web Server
+
+Install Apache2 di VM sebagai web server.
+
+[Install Apache2 sebagai Web Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
+
+---
+
+## 19. Akses HTTP Apache2
+
+Verifikasi akses ke web server Apache2 dari browser.
+
+[Akses HTTP Apache2](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/19.%20Akses%20HTTP%20Apache2.png)
 
