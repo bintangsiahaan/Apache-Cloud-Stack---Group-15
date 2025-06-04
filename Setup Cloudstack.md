@@ -24,7 +24,7 @@ Tentukan apakah zone yang digunakan adalah Basic atau Advanced.
 
 Isi nama zone dan parameter lainnya.
 
-![Input the zone details](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/2.%20Choose%20core%20zone%20type.png)
+![Input the zone details](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/3.%20Input%20the%20zone%20details.png)
 
 ---
 
@@ -64,7 +64,7 @@ Tentukan nama cluster dan jenis hypervisor.
 
 Masukkan detail host (IP, username, password).
 
-![Add host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/7.%20Add%20new%20cluster.png)
+![Add host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/8.%20Add%20host.png)
 
 ---
 
@@ -72,7 +72,7 @@ Masukkan detail host (IP, username, password).
 
 Tentukan penyimpanan utama, misalnya NFS path.
 
-![Input primary storage details](http://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/9.%20Input%20primary%20storage%20details.png)
+![Input primary storage](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/9.%20Input%20primary%20storage%20details.png)
 
 ---
 
