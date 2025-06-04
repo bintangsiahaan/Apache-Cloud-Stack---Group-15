@@ -8,7 +8,7 @@ Berikut adalah langkah-langkah lengkap untuk konfigurasi Zone di CloudStack, dil
 
 Pada tahap awal, tentukan tipe zone yang ingin digunakan.
 
-[Choose zone type](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/1.%20Choose%20zone%20type.png)
+![Choose zone type](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/1.%20Choose%20zone%20type.png)
 
 ---
 
@@ -16,7 +16,7 @@ Pada tahap awal, tentukan tipe zone yang ingin digunakan.
 
 Tentukan apakah zone yang digunakan adalah Basic atau Advanced.
 
-[Choose core zone type](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/2.%20Choose%20core%20zone%20type.png)
+![Choose core zone type](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/2.%20Choose%20core%20zone%20type.png)
 
 ---
 
@@ -24,7 +24,7 @@ Tentukan apakah zone yang digunakan adalah Basic atau Advanced.
 
 Isi nama zone dan parameter lainnya.
 
-[Input the zone details](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/2.%20Choose%20core%20zone%20type.png)
+![Input the zone details](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/2.%20Choose%20core%20zone%20type.png)
 
 ---
 
@@ -32,7 +32,7 @@ Isi nama zone dan parameter lainnya.
 
 Tentukan jaringan publik untuk akses luar.
 
-[Add public traffic](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/4.%20Add%20public%20traffic.png)
+![Add public traffic](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/4.%20Add%20public%20traffic.png)
 
 ---
 
@@ -40,7 +40,7 @@ Tentukan jaringan publik untuk akses luar.
 
 Masukkan konfigurasi pod seperti gateway, netmask, dan IP range.
 
-[Add new pod](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/5.%20Add%20new%20pod.png)
+![Add new pod](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/5.%20Add%20new%20pod.png)
 
 ---
 
@@ -48,7 +48,7 @@ Masukkan konfigurasi pod seperti gateway, netmask, dan IP range.
 
 Tentukan jaringan guest yang akan digunakan oleh VM.
 
-[Set guest traffic](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/6.%20Set%20guest%20traffic.png)
+![Set guest traffic](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/6.%20Set%20guest%20traffic.png)
 
 ---
 
@@ -56,7 +56,7 @@ Tentukan jaringan guest yang akan digunakan oleh VM.
 
 Tentukan nama cluster dan jenis hypervisor.
 
-[Add new cluster](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/7.%20Add%20new%20cluster.png)
+![Add new cluster](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/7.%20Add%20new%20cluster.png)
 
 ---
 
@@ -64,7 +64,7 @@ Tentukan nama cluster dan jenis hypervisor.
 
 Masukkan detail host (IP, username, password).
 
-[Add host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/7.%20Add%20new%20cluster.png)
+![Add host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/7.%20Add%20new%20cluster.png)
 
 ---
 
@@ -72,7 +72,7 @@ Masukkan detail host (IP, username, password).
 
 Tentukan penyimpanan utama, misalnya NFS path.
 
-[Input primary storage details](http://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/9.%20Input%20primary%20storage%20details.png)
+![Input primary storage details](http://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/9.%20Input%20primary%20storage%20details.png)
 
 ---
 
@@ -80,7 +80,7 @@ Tentukan penyimpanan utama, misalnya NFS path.
 
 Tambahkan lokasi penyimpanan image/template ISO.
 
-[Input secondary storage details](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/10.%20Input%20secondary%20storage%20details.png)
+![Input secondary storage details](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/10.%20Input%20secondary%20storage%20details.png)
 
 ---
 
@@ -88,7 +88,7 @@ Tambahkan lokasi penyimpanan image/template ISO.
 
 Setelah semua konfigurasi selesai, klik **Launch Zone**.
 
-[Launch the zone](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/11.%20Launch%20the%20zone.png)
+![Launch the zone](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Zone/11.%20Launch%20the%20zone.png)
 
 ---
 
@@ -102,7 +102,7 @@ Dokumentasi ini menjelaskan proses membuat virtual machine (Instance) di Apache 
 
 Buat compute offering sebagai konfigurasi resource (CPU, RAM) untuk VM.
 
-[Add compute offering](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/1.%20Add%20compute%20offering.png)
+![Add compute offering](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/1.%20Add%20compute%20offering.png)
 
 ---
 
@@ -110,7 +110,7 @@ Buat compute offering sebagai konfigurasi resource (CPU, RAM) untuk VM.
 
 Daftarkan file ISO (misal Ubuntu, Debian, dsb.) untuk digunakan dalam instalasi instance.
 
-[Register the ISO](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/2.%20Register%20the%20ISO.png)
+![Register the ISO](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/2.%20Register%20the%20ISO.png)
 
 ---
 
@@ -118,27 +118,27 @@ Daftarkan file ISO (misal Ubuntu, Debian, dsb.) untuk digunakan dalam instalasi 
 
 Mulai proses pembuatan instance dengan memilih zona, template, dan offering.
 
-[Add instance details (1)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/3.%20Add%20instance%20details%20(1).png)
+![Add instance details (1)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/3.%20Add%20instance%20details%20(1).png)
 
 ---
 
 ## 4. Masukkan Detail Instance (2)
 
 
-[Add instance details (2)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/4.%20Add%20instance%20details%20(2).png)
+![Add instance details (2)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/4.%20Add%20instance%20details%20(2).png)
 
 ---
 
 ## 5. Masukkan Detail Instance (3)
 
 
-[Add instance details (3)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/5.%20Add%20instance%20details%20(3).png)
+![Add instance details (3)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/5.%20Add%20instance%20details%20(3).png)
 
 ---
 
 ## 6. Masukkan Detail Instance (4)
 
-[Add instance details (4)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/6.%20Add%20instance%20details%20(4).png)
+![Add instance details (4)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/6.%20Add%20instance%20details%20(4).png)
 
 ---
 
@@ -146,7 +146,7 @@ Mulai proses pembuatan instance dengan memilih zona, template, dan offering.
 
 Instance berhasil dibuat dan statusnya sekarang **Running**.
 
-[Instance running](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/7.%20Instance%20running.png)
+![Instance running](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Instance/7.%20Instance%20running.png)
 
 ---
 
@@ -161,7 +161,7 @@ Dokumentasi langkah-langkah pengaturan firewall, port forwarding, akses SSH, dan
 
 Masalah saat VM tidak bisa booting karena perangkat ISO belum dilepas.
 
-[Ubuntu Error (Before Detach)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/1.%20Ubuntu%20Error%20(Before%20Detach).png)
+![Ubuntu Error (Before Detach)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/1.%20Ubuntu%20Error%20(Before%20Detach).png)
 
 ---
 
@@ -169,7 +169,7 @@ Masalah saat VM tidak bisa booting karena perangkat ISO belum dilepas.
 
 Lepaskan ISO agar VM dapat boot dari disk.
 
-[Detach ISO](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/2.%20Detach%20ISO.png)
+![Detach ISO](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/2.%20Detach%20ISO.png)
 
 ---
 
@@ -177,7 +177,7 @@ Lepaskan ISO agar VM dapat boot dari disk.
 
 VM berhasil booting setelah ISO dilepas.
 
-[Ubuntu Fixed (After Detach)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/3.%20Ubuntu%20Fixed%20(After%20Detach).png)
+![Ubuntu Fixed (After Detach)](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/3.%20Ubuntu%20Fixed%20(After%20Detach).png)
 
 ---
 
@@ -185,7 +185,7 @@ VM berhasil booting setelah ISO dilepas.
 
 Atur egress rule agar VM bisa keluar ke internet.
 
-[Egress Rule](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/4.%20Egress%20Rule.png)
+![Egress Rule](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/4.%20Egress%20Rule.png)
 
 ---
 
@@ -193,7 +193,7 @@ Atur egress rule agar VM bisa keluar ke internet.
 
 Aktifkan firewall port 22 untuk SSH.
 
-[Firewall 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/5.%20Firewall%2022.png)
+![Firewall 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/5.%20Firewall%2022.png)
 
 ---
 
@@ -201,7 +201,7 @@ Aktifkan firewall port 22 untuk SSH.
 
 Verifikasi VM sudah bisa akses internet.
 
-[VM bisa akses internet](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/6.%20VM%20bisa%20akses%20internet.png)
+![VM bisa akses internet](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/6.%20VM%20bisa%20akses%20internet.png)
 
 ---
 
@@ -209,7 +209,7 @@ Verifikasi VM sudah bisa akses internet.
 
 Lakukan port forwarding dari host ke VM untuk port 22 (SSH).
 
-[Port Forwarding 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/7.%20Port%20Forwarding%2022.png)
+![Port Forwarding 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/7.%20Port%20Forwarding%2022.png)
 
 ---
 
@@ -217,7 +217,7 @@ Lakukan port forwarding dari host ke VM untuk port 22 (SSH).
 
 Buka port 22 pada firewall di dalam VM.
 
-[Mengatur VM agar membuka Port 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/8.%20Mengatur%20VM%20agar%20membuka%20Port%2022.png)
+![Mengatur VM agar membuka Port 22](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/8.%20Mengatur%20VM%20agar%20membuka%20Port%2022.png)
 
 ---
 
@@ -225,7 +225,7 @@ Buka port 22 pada firewall di dalam VM.
 
 Verifikasi bahwa VM dapat diakses via SSH dari luar.
 
-[Bisa SSH dari luar](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/9.%20Bisa%20SSH%20dari%20luar.png)
+![Bisa SSH dari luar](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/9.%20Bisa%20SSH%20dari%20luar.png)
 
 ---
 
@@ -233,7 +233,7 @@ Verifikasi bahwa VM dapat diakses via SSH dari luar.
 
 Tambahkan aturan firewall untuk port 2222 (akses alternatif SSH).
 
-[Firewall 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/10.%20Firewall%202222.png)
+![Firewall 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/10.%20Firewall%202222.png)
 
 ---
 
@@ -241,7 +241,7 @@ Tambahkan aturan firewall untuk port 2222 (akses alternatif SSH).
 
 Lakukan port forwarding dari port 2222 host ke port 22 VM.
 
-[Port Forwarding 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/11.%20Port%20Forwarding%202222.png)
+![Port Forwarding 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/11.%20Port%20Forwarding%202222.png)
 
 ---
 
@@ -249,7 +249,7 @@ Lakukan port forwarding dari port 2222 host ke port 22 VM.
 
 Konfigurasi port forwarding 2222 pada Ubuntu host menggunakan `iptables` atau `netplan`.
 
-[Mengatur Port Forwarding 2222 di Ubuntu Host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/12.%20Mengatur%20Port%20Forwarding%202222%20di%20Ubuntu%20Host.png)
+![Mengatur Port Forwarding 2222 di Ubuntu Host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/12.%20Mengatur%20Port%20Forwarding%202222%20di%20Ubuntu%20Host.png)
 
 ---
 
@@ -257,7 +257,7 @@ Konfigurasi port forwarding 2222 pada Ubuntu host menggunakan `iptables` atau `n
 
 Pastikan firewall di VM membuka port 2222.
 
-[Mengatur VM agar membuka Port 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/13.%20Mengatur%20VM%20agar%20membuka%20Port%202222.png)
+![Mengatur VM agar membuka Port 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/13.%20Mengatur%20VM%20agar%20membuka%20Port%202222.png)
 
 ---
 
@@ -265,7 +265,7 @@ Pastikan firewall di VM membuka port 2222.
 
 Verifikasi bahwa port forwarding ke 2222 berhasil.
 
-[Bisa Port Forwarding 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/14.%20Bisa%20Port%20Forwarding%202222.png)
+![Bisa Port Forwarding 2222](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/14.%20Bisa%20Port%20Forwarding%202222.png)
 
 ---
 
@@ -273,7 +273,7 @@ Verifikasi bahwa port forwarding ke 2222 berhasil.
 
 Konfigurasi forwarding port 80 untuk akses web (HTTP).
 
-[Mengatur Port Forwarding 80 di Ubuntu Host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/15.%20Mengatur%20Port%20Forwarding%2080%20di%20Ubuntu%20Host.png)
+![Mengatur Port Forwarding 80 di Ubuntu Host](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/15.%20Mengatur%20Port%20Forwarding%2080%20di%20Ubuntu%20Host.png)
 
 ---
 
@@ -281,7 +281,7 @@ Konfigurasi forwarding port 80 untuk akses web (HTTP).
 
 Aktifkan firewall port 80 untuk HTTP.
 
-[Firewall 80](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/16.%20Firewall%2080.png)
+![Firewall 80](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/16.%20Firewall%2080.png)
 
 ---
 
@@ -289,7 +289,7 @@ Aktifkan firewall port 80 untuk HTTP.
 
 Lakukan port forwarding dari port 80 host ke port 80 VM.
 
-[Port Forwarding 80](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
+![Port Forwarding 80](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
 
 ---
 
@@ -297,7 +297,7 @@ Lakukan port forwarding dari port 80 host ke port 80 VM.
 
 Install Apache2 di VM sebagai web server.
 
-[Install Apache2 sebagai Web Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
+![Install Apache2 sebagai Web Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
 
 ---
 
@@ -305,5 +305,5 @@ Install Apache2 di VM sebagai web server.
 
 Verifikasi akses ke web server Apache2 dari browser.
 
-[Akses HTTP Apache2](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/19.%20Akses%20HTTP%20Apache2.png)
+![Akses HTTP Apache2](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/19.%20Akses%20HTTP%20Apache2.png)
 
