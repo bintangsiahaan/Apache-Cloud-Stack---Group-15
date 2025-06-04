@@ -297,7 +297,7 @@ Lakukan port forwarding dari port 80 host ke port 80 VM.
 
 Install Apache2 di VM sebagai web server.
 
-![Install Apache2 sebagai Web Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/17.%20Port%20Forwarding%2080.png)
+![Install Apache2 sebagai Web Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Requirement%20Task/18.%20Install%20Apache2%20sebagai%20Web%20Server.png)
 
 ---
 
