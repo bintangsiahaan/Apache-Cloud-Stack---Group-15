@@ -29,7 +29,7 @@ Modifikasi file konfigurasi network menggunakan netplan yang digunakan oleh Ubun
 cd /etc/netplan
 sudo nano ./50-cloud-init.yaml
 ```
-[Netplan](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/1.%20Configure%20Network.png)
+![Netplan](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/1.%20Configure%20Network.png)
 
 File konfigurasi awalnya seperti ini:
 ```
@@ -97,7 +97,7 @@ apt upgrade -y
 apt install htop lynx duf -y
 apt install bridge-utils
 ```
-[Installing Monitoring Tools](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/2.%20Installing%20Hardware%20resource%20monitoring%20tools.png)
+![Installing Monitoring Tools](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/2.%20Installing%20Hardware%20resource%20monitoring%20tools.png)
 Penjelasan:
 
 * htop → monitoring penggunaan CPU/memori.
@@ -122,7 +122,7 @@ apt-get install intel-microcode -y
 passwd root
 #change it to Pa$$w0rd
 ```
-[Install networking service & editor](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/3.%20Installing%20Network%20services%20and%20text%20editor.png)
+![Install networking service & editor](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/3.%20Installing%20Network%20services%20and%20text%20editor.png)
 
 Penjelasan:
 * openntpd → sinkronisasi waktu.
@@ -139,13 +139,13 @@ service ssh restart
 #or
 systemctl restart sshd.service
 ```
-[Enab;e SSH Root login](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/4.%20Enable%20SSH%20root%20login.png)
+![Enab;e SSH Root login](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/4.%20Enable%20SSH%20root%20login.png)
 
 ### Verifikasi
 ```
 nano /etc/ssh/sshd_config
 ```
-[Verifikasi](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/5.%20Check%20the%20SSH%20Configuration.png)
+![Verifikasi](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/5.%20Check%20the%20SSH%20Configuration.png)
 Cari line 'PermitRootLogin' pastikan diatur ke 'yes'
 
 ## Cloudstack Installation 
@@ -159,7 +159,7 @@ mkdir -p /etc/apt/keyrings
 wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
 echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 / > /etc/apt/sources.list.d/cloudstack.list
 ```
-[Add repository key](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/6.%20Importing%20cloudstack%20repositories%20key.png)
+![Add repository key](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/6.%20Importing%20cloudstack%20repositories%20key.png)
 
 * Line pertama adalah membuat direktori untuk menyimpan kunci publik cloudstack
 * wget -O untuk mengunduh URL yang diberikan dan mengalihkan output ke perintah 'gpg --dearmor'
@@ -170,7 +170,7 @@ echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.
 ```
 nano /etc/apt/sources.list.d/cloudstack.list
 ```
-[Verify Repositories](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/7.%20Check%20the%20added%20repositories.png)
+![Verify Repositories](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/7.%20Check%20the%20added%20repositories.png)
 
 pastikan melihat ini di line terakhir
 
@@ -184,7 +184,7 @@ deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/c
 apt-get update -y
 apt-get install cloudstack-management mysql-server
 ```
-[Installing Cloudstack](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/8.%20Installing%20Cloudstack%20and%20Mysql%20Server.png)
+![Installing Cloudstack](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/8.%20Installing%20Cloudstack%20and%20Mysql%20Server.png)
 
 Proses ini akan memakan waktu lama...
 
@@ -195,7 +195,7 @@ Membuka file konfigurasi mysql
 ```
 nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-[Configure mysql](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/9.%20Configure%20mysql.png)
+![Configure mysql](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/9.%20Configure%20mysql.png)
 
 Tambahkan bagian ini dibawah [mysqld] section
 
@@ -225,7 +225,7 @@ Seharusnya terdapat kata 'active' pada output
 ```
 cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:Pa$$w0rd -i 10.1.10.24
 ```
-[Setup database](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/10.%20Deploy%20Database%20as%20Root%20and%20Then%20Create%20cloud%20User%20with%20Password.png)
+![Setup database](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/10.%20Deploy%20Database%20as%20Root%20and%20Then%20Create%20cloud%20User%20with%20Password.png)
 
 ### Configure Primary and Secondary Storage
 
@@ -235,7 +235,7 @@ echo "/export  *(rw,async,no_root_squash,no_subtree_check)" > /etc/exports
 mkdir -p /export/primary /export/secondary
 exportfs -a
 ```
-[Configure Primary and Secondary](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/11.%20Configure%20Primary%20and%20Secondary%20Storage.png)
+![Configure Primary and Secondary](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/11.%20Configure%20Primary%20and%20Secondary%20Storage.png)
 
 ### Configure NFS Server
 
@@ -246,7 +246,7 @@ echo "NEED_STATD=yes" >> /etc/default/nfs-common
 sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
 service nfs-kernel-server restart
 ```
-[Configure NFS](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/12.%20Configure%20NFS%20Server.png)
+![Configure NFS](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/12.%20Configure%20NFS%20Server.png)
 
 Penjelasan:
 
@@ -268,7 +268,7 @@ Merestart layanan NFS Kernel Server agar perubahan konfigurasi yang baru diterap
 ```
 apt-get install qemu-kvm cloudstack-agent -y
 ```
-[Install KVM & Agent](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/13.%20Install%20KVM%20and%20Cloudstack%20Agent.png)
+![Install KVM & Agent](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/13.%20Install%20KVM%20and%20Cloudstack%20Agent.png)
 
 ### Configure KVM Virtualization Management
 
@@ -343,7 +343,7 @@ UUID=$(uuid)
 echo host_uuid = \"$UUID\" >> /etc/libvirt/libvirtd.conf
 systemctl restart libvirtd
 ```
-[Generate Unique Host ID](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/14.%20Generate%20Unique%20Host%20ID.png)
+![Generate Unique Host ID](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/14.%20Generate%20Unique%20Host%20ID.png)
 
 ### Configure Firewall Rules
 
@@ -367,7 +367,7 @@ iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 16514 -j ACCEP
 
 apt-get install iptables-persistent
 ```
-[Configure Firewall Rules](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/15.%20Configure%20Iptables%20Firewall%20and%20Make%20it%20persistent.png)
+![Configure Firewall Rules](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/15.%20Configure%20Iptables%20Firewall%20and%20Make%20it%20persistent.png)
 
 Saat instalasi iptables-persistent, cukup jawab yes untuk menyimpan rules secara permanen. Langkah ini memastikan semua port layanan yang digunakan oleh cloudstack tidak diblokir oleh firewall dan dapat diakses oleh jaringan
 * `-A INPUT` menambahkan aturan ke rantai INPUT (incoming traffic).
@@ -405,7 +405,7 @@ systemctl status cloudstack-management
 tail -f /var/log/cloudstack/management/management-server.log #if you want to troubleshoot 
 #wait until all services (components) running successfully
 ```
-[Launch Management Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/16.%20Launch%20management%20Server.png)
+![Launch Management Server](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/16.%20Launch%20management%20Server.png)
 
 Penjelasan:
 * `cloudstack-setup-management`
@@ -421,7 +421,7 @@ Melihat log terbaru dari server manajemen secara real-time. Sangat membantu untu
 ```
 http://100.118.141.51:8080
 ```
-[Dashboard](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/17.%20Open%20Cloudstack%20dashboard.png)
+![Dashboard](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/17.%20Open%20Cloudstack%20dashboard.png)
 
 ### Halaman Utama Apache Cloud Stack
 
