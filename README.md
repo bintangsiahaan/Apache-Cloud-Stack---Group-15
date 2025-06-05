@@ -115,3 +115,8 @@ Berikut adalah gambaran umum alur kerja pada CloudStack:
 - Cocok untuk skala kecil maupun besar.
 - Mudah digunakan dan dikonfigurasi.
 - Dukungan komunitas dan dokumentasi lengkap.
+
+## Referensi
+- AhmadRifqi86/cloudstack-install-and-configure. (n.d.). GitHub. https://github.com/AhmadRifqi86/cloudstack-install-and-configure/
+- Installation guide — Apache CloudStack 4.20.0.0 documentation. (n.d.). Welcome to Apache CloudStack’s Documentation — Apache CloudStack 4.20.0.0 documentation. https://docs.cloudstack.apache.org/en/4.20.0.0/installguide/
+- HackMD: Your collaborative Markdown workspace for knowledge sharing. (n.d.). HackMD: Your Collaborative Markdown Workspace for Knowledge Sharing. https://hackmd.io/@_ZfqOpYhTCq5xfvPo9Xb8g/rkQSNa0L3
