@@ -1,6 +1,6 @@
 # Konfigurasi Zone di Apache CloudStack
 
-Berikut adalah langkah-langkah lengkap untuk konfigurasi Zone di CloudStack, dilengkapi dengan gambar referensi berdasarkan urutan.
+Berikut adalah langkah-langkah lengkap untuk konfigurasi Zone di CloudStack
 
 ---
 
