@@ -1,5 +1,5 @@
 # Apache-Cloud-Stack---Group-15
-![Logo UI](https://github.com/user-attachments/assets/6b900171-e796-4035-920c-06590350d884)
+![Logo UI](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/Logo.png)
 
 # Kelompok 15
 1. Fathin Umara Aero (2206814186)
