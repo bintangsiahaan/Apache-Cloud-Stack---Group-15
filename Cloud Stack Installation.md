@@ -422,3 +422,7 @@ Melihat log terbaru dari server manajemen secara real-time. Sangat membantu untu
 http://100.118.141.51:8080
 ```
 ![Dashboard](https://github.com/bintangsiahaan/Apache-Cloud-Stack---Group-15/blob/main/Installation/17.%20Open%20Cloudstack%20dashboard.png)
+
+
+### Berikut Link Video Instalasi
+`https://youtu.be/rwTnuCj4cGY`
